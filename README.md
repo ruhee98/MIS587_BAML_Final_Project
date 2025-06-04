@@ -10,6 +10,10 @@ To evaluate which feature types best predict conversion, we compared models trai
 - Evaluate the impact of combining these feature types on model performance using AutoML (DataRobot). 
 - Generate actionable insights into user behavior patterns (e.g., session length, funnel depth) that correlate with conversion or drop-off.
 
+## Dataset used: 
+Source:  https://www.kaggle.com/datasets/bytadit/transactional-ecommerce
+
+
 ## Feature Engineering Techniques 
 
 The first step we took for the clickstream, transaction and products data was to merge it and create new metrics for feature engineering to perform predictive modeling for finding purchase intent or user conversion in Data Robot/AutoML. Hence, our decision to have our target variable be “converted”. 
