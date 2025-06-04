@@ -10,9 +10,8 @@ To evaluate which feature types best predict conversion, we compared models trai
 - Evaluate the impact of combining these feature types on model performance using AutoML (DataRobot). 
 - Generate actionable insights into user behavior patterns (e.g., session length, funnel depth) that correlate with conversion or drop-off.
 
-## Dataset used: 
+## Dataset Used
 Source:  https://www.kaggle.com/datasets/bytadit/transactional-ecommerce
-
 
 ## Feature Engineering Techniques 
 
@@ -22,7 +21,7 @@ The first step we took for the clickstream, transaction and products data was to
 2. Static Features:  Static features are derived from stable, non-time-dependent attributes that describe either the user, the session, or the product in a summarized or categorical manner.  They capture foundational context that can help characterize the overall profile of a user or interaction, such as customer demographic information.
 3.  Sequential Features Since the heart of clickstream data is, following a user’s journey, we created a new feature ‘funnel sequence’, based on the event type journey in a session per customer, where we create a string capturing the order of event types for sequential modeling.  We believed this feature would be useful for determining user drop off, and for applying deep learning which we hope to look at in future modeling. 
 
-## Leveraging DataRobot for classifying user conversion
+## Leveraging DataRobot for Determing Customer Purchase Conversion 
 The final dataset is a cleaned, merged, and enriched representation of user sessions, ready for supervised classification modeling in Data Robot. It combines time-aware behavioral metrics, sequential journey indicators, and all features were scaled, binned, or encoded appropriately for ingestion into AutoML/DataRobot . 
 
 ### Model Selection Process: 
